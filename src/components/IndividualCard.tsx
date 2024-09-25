@@ -9,6 +9,7 @@ import {
 import React, {useState} from 'react';
 import styles from '../styles/style';
 import stylesWithProp from '../styles/styleWithProp';
+import Search from './Search';
 
 const cardIndividual = [
   {
@@ -104,6 +105,7 @@ const IndividualCard = () => {
         />
       ) : (
         <ScrollView>
+          <Search />
           <View style={styles.details}>
             <View style={styles.detailsImagePart}>
               <Image
